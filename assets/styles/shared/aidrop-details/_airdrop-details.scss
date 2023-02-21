@@ -1,0 +1,152 @@
+.airdrop-details-container {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  height: 225px;
+  padding: 25px 25px 25px 0;
+  display: flex;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-top: 24px;
+  .bg-blur-image {
+    color: transparent;
+    position: absolute;
+    z-index: -1;
+    height: 170%;
+    margin-top: -90px;
+    width: 100%;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  }
+  .airdrop-details-content {
+    flex: 7;
+    .airdrop-header {
+      height: 25px;
+      display: flex;
+      .airdrop-label {
+        width: 120px;
+        // background-color: #3CAA2A;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+      }
+      .airdrop-status {
+        width: 100px;
+        background-color: #e4e4e4;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 8px;
+        .airdrop-status-label {
+          margin-left: 10px;
+          font-size: 14px;
+        }
+      }
+      .airdrop-date {
+        height: 25px;
+        width: 200px;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .date-status {
+          padding: 0 8px;
+          font-weight: 700;
+        }
+        // .date-value {
+          
+        // }
+      }
+    }
+    .airdrop-sub-content {
+      padding: 16px 24px;
+      .airdrop-sub-title {
+        font-size: 16px;
+      }
+      .airdop-name-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 4px 0 0;
+        .airdrop-name {
+          font-size: 30px;
+          font-weight: 700;
+        }
+        .airdrop-count {
+          font-size: 14px;
+          padding: 0 8px;
+          margin-top: 4px;
+        }
+      }
+      .airdrop-transaction-details {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 12px;
+        .airdrop-transaction-status {
+          padding: 0 8px;
+        }
+      }
+      .transaction-progress-bar {
+        height: 20px;
+        margin-top: 12px;
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), #FF4800;
+        background-blend-mode: overlay, normal;
+        border-radius: 8px;
+      }
+      .airdrop-actions {
+        margin-top: 16px;
+        display: flex;
+        align-items: center;
+        .more-details {
+          color: #FFFFFF;
+          font-weight: 700;
+          display: flex;
+          align-items: center;
+          padding: 8px 16px;
+          width: 125px;
+          height: 40px;
+          background: #000000;
+          justify-content: center;
+          border-radius: 8px;
+          border: 1px solid;
+          cursor: pointer;
+        }
+        .cancel-btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 8px 16px;
+          width: 80px;
+          height: 40px;
+          border: 1px solid #000000;
+          border-radius: 8px;
+          margin: 0 8px;
+        }
+        .checkbox-email {
+          width: 14px;
+          height: 14px;
+          border-radius: 2px;
+          margin: 0 8px;
+          &:after {
+            background-color: black;
+          }
+        }
+      }
+    }
+  }
+
+  .airdrop-image {
+    flex: 3;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

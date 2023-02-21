@@ -1,5 +1,5 @@
 import ManureImage from '../../assets/icons/Manure.svg';
-import WaterImage from '../../assets/icons/Water.svg';
+import WaterImage from '../../assets/icons/water.svg';
 
 export const airdropDetails = [
   {

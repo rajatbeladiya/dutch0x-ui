@@ -33,9 +33,10 @@
         justify-content: center;
         align-items: center;
         font-size: 12px;
+        font-weight: 400;
       }
       .airdrop-status {
-        width: 100px;
+        width: 115px;
         background-color: #e4e4e4;
         border-radius: 8px;
         display: flex;
@@ -45,11 +46,11 @@
         .airdrop-status-label {
           margin-left: 10px;
           font-size: 14px;
+          font-weight: bold;
         }
       }
       .airdrop-date {
         height: 25px;
-        width: 200px;
         font-size: 14px;
         display: flex;
         justify-content: center;
@@ -59,9 +60,6 @@
           padding: 0 8px;
           font-weight: 700;
         }
-        // .date-value {
-          
-        // }
       }
     }
     .airdrop-sub-content {
@@ -76,7 +74,7 @@
         padding: 4px 0 0;
         .airdrop-name {
           font-size: 30px;
-          font-weight: 700;
+          font-weight: 500;
         }
         .airdrop-count {
           font-size: 14px;
@@ -128,6 +126,8 @@
           border: 1px solid #000000;
           border-radius: 8px;
           margin: 0 8px;
+          cursor: pointer;
+          font-size: 16px;
         }
         .checkbox-email {
           width: 14px;

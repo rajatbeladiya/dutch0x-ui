@@ -14,13 +14,15 @@ const AirdropDetails = ({
   isCancel,
   isRecieveEmail,
   airdropImage,
+  progressStatusIcon,
 }: IAirdropDetails) => (
   <div className="airdrop-details-container">
     <Image src={airdropImage} alt='' className="bg-blur-image" />
     <div className="airdrop-details-content">
       <div className="airdrop-header">
         <div className="airdrop-label" style={{ backgroundColor: airdropLabelBackgroundColor }}>
-          AIRDROP
+          {progressStatusIcon && <Image src={progressStatusIcon} alt="icon" />}
+          &nbsp;AIRDROP
         </div>
         <div className="airdrop-status">
           <Image src={DateIcon} alt="date-icon" />
@@ -28,8 +30,7 @@ const AirdropDetails = ({
         </div>
         <div className="airdrop-date">
           <Image src={ClockIcon} alt="clock-icon" />
-          <label className="date-status">Started</label>
-          <label className="date-value">2022-09-13 08:57:15</label>
+          <label className="date-status">Started</label>2022-09-13 08:57:15
         </div>
       </div>
       <div className="airdrop-sub-content">

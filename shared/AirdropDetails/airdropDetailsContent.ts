@@ -1,5 +1,6 @@
-import ManureImage from '../../assets/icons/Manure.svg';
+import ManureImage from '../../assets/icons/manure.svg';
 import WaterImage from '../../assets/icons/water.svg';
+import completeIcon from '../../assets/icons/complete.svg';
 
 export const airdropDetails = [
   {
@@ -27,5 +28,6 @@ export const airdropDetails = [
     isCancel: false,
     isRecieveEmail: false,
     airdropImage: WaterImage,
+    progressStatusIcon: completeIcon,
   },
 ];

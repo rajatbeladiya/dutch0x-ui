@@ -26,8 +26,11 @@
         height: 23px;
       }
       .menu-item {
+        color: rgba(0, 0, 0, 0.6);
+        cursor: pointer;
         &.selected-menu {
           font-weight: 700;
+          color: #000000;
         }
       }
       .selected-circle {
@@ -40,6 +43,7 @@
         color: #FF4800;
         font-size: 12px;
         width: 100%;
+        line-height: 150%;
       }
     }
     .search-bar-wrapper {
@@ -61,7 +65,8 @@
           background-color: transparent;
           outline: none;
           width: 100%;
-          padding: 0 10px 0;
+          padding: 1px 10px 0;
+          font-size: 16px;
         }
         .sub-icon {
           background-color: rgba(0, 0, 0, 0.2);
@@ -87,7 +92,7 @@
           align-items: center;
           justify-content: center;
           width: 70px;
-          height: 25px;
+          height: 32px;
           background: rgba(60, 170, 42, 0.2);
           border-radius: 4px;
           .ellipse {
@@ -100,6 +105,7 @@
             padding-left: 4px;
             font-size: 12px;
             font-weight: 700;
+            color: #3CAA2A;
           }
         }
       }
@@ -116,9 +122,10 @@
         }
   
         .other-items {
-          height: 18px;
-          width: 18px;
+          height: 20px;
+          width: 20px;
           padding: 0 16px;
+          cursor: pointer;
           img {
             height: 100%;
             width: 100%;
@@ -129,13 +136,14 @@
   }
   .sub-menu-items {
     display: flex;
-    padding: 10px 25px 17px;
+    padding: 10px 26px 26px;
     .sub-menu-items-content {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       flex: 1;
+      cursor: pointer;
       .menu-image {
         height: 150px;
         margin: 0 8px;
@@ -146,8 +154,9 @@
         border-radius: 8px;
       }
       .menu-name {
-        margin-top: 8px;
+        margin-top: 16px;
         font-weight: 700;
+        line-height: 24px;
       }
     }
   }

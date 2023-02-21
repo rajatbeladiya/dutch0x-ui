@@ -3,7 +3,7 @@ import { nftsItems, walletDetails, savedSearches, recentActivity } from "./overv
 
 const Overview = () => (
   <div className="overview-container">
-    <h3>Overview</h3>
+    <div className="title">Overview</div>
     <ListCardContainer
       listCardItems={walletDetails}
     />

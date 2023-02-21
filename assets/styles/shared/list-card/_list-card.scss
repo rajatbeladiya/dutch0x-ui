@@ -18,10 +18,12 @@
       display: flex;
       justify-content: space-between;
       margin-top: 24px;
+      line-height: 150%;
       .item-name {
         color: rgba(0, 0, 0, 0.6);
       }
       .item-value {
+        cursor: pointer;
         display: flex; 
         align-items: center;
         img {

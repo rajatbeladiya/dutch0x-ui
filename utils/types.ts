@@ -15,6 +15,7 @@ export interface IAirdropDetails {
   isCancel: boolean;
   isRecieveEmail: boolean;
   airdropImage: string;
+  progressStatusIcon: string;
 }
 
 export interface IListCard {

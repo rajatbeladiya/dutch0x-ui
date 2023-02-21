@@ -2,7 +2,7 @@ export const walletDetails = [
   {
     key: 'wallet-balance', 
     name: 'Wallet balance',
-    value: 0.489,
+    value: '0.489 ETH',
   },
 ];
 
@@ -42,6 +42,6 @@ export const recentActivity = [
   },
   {
     key: 'sales', 
-    name: 'Sales Report',
+    name: 'Sales reports',
   },
 ];

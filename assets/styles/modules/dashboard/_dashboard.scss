@@ -1,4 +1,5 @@
 .dashboard-container {
   display: flex;
-  padding: 0 30px 30px;
+  padding: 0 $standard-padding * 4 $standard-padding * 4;
+  flex-wrap: wrap;
 }

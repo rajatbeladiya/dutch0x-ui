@@ -15,6 +15,7 @@ export const airdropDetails = [
     isCancel: true,
     isRecieveEmail: true,
     airdropImage: ManureImage,
+    progressPercentage: 40,
   },
   {
     key: 'water',
@@ -29,5 +30,6 @@ export const airdropDetails = [
     isRecieveEmail: false,
     airdropImage: WaterImage,
     progressStatusIcon: completeIcon,
+    progressPercentage: 100
   },
 ];

@@ -27,7 +27,7 @@ const Header = () => (
               }
               {
                 menuItem.comingSoon && 
-                <div className='coming-soon'>Coming Soon</div>
+                <div className='coming-soon'>Coming soon</div>
               }
             </div>
           ))

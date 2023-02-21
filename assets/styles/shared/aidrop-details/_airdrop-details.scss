@@ -2,12 +2,15 @@
   background: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
   height: 225px;
-  padding: 25px 25px 25px 0;
+  padding: $standard-padding * 3 $standard-padding * 3 $standard-padding * 3 0;
   display: flex;
   width: 100%;
   position: relative;
   overflow: hidden;
-  margin-top: 24px;
+  margin-top: $standard-margin * 3;
+  min-width: 770px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 2px rgb(0 0 0 / 5%);
   .bg-blur-image {
     color: transparent;
     position: absolute;
@@ -15,8 +18,8 @@
     height: 170%;
     margin-top: -90px;
     width: 100%;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
   }
   .airdrop-details-content {
     flex: 7;
@@ -34,15 +37,28 @@
         align-items: center;
         font-size: 12px;
         font-weight: 400;
+        .green-circle {
+          height: 16px;
+          width: 16px;
+          border-radius: 16px;
+          background-color: #77c469;
+          position: relative;
+          img {
+            color: transparent;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+          }
+        }
       }
       .airdrop-status {
-        width: 115px;
+        width: 125px;
         background-color: #e4e4e4;
         border-radius: 8px;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0 8px;
+        margin: 0 $standard-margin;
         .airdrop-status-label {
           margin-left: 10px;
           font-size: 14px;
@@ -55,15 +71,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
+        color: rgba(0, 0, 0, 0.7);
         .date-status {
-          padding: 0 8px;
+          padding: 0 $standard-padding;
           font-weight: 700;
         }
       }
     }
     .airdrop-sub-content {
-      padding: 16px 24px;
+      padding: $standard-padding * 2 $standard-padding * 3;
       .airdrop-sub-title {
         font-size: 16px;
       }
@@ -71,35 +87,44 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        padding: 4px 0 0;
+        padding: $standard-padding / 2 0 0;
         .airdrop-name {
           font-size: 30px;
           font-weight: 500;
         }
         .airdrop-count {
           font-size: 14px;
-          padding: 0 8px;
-          margin-top: 4px;
+          padding: 0 $standard-padding;
+          margin-top: $standard-margin / 2;
         }
       }
       .airdrop-transaction-details {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        padding-top: 12px;
+        padding-top: $standard-padding * 1.5;
         .airdrop-transaction-status {
-          padding: 0 8px;
+          padding: 0 $standard-padding;
         }
       }
       .transaction-progress-bar {
         height: 20px;
-        margin-top: 12px;
-        background: linear-gradient(270deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), #FF4800;
-        background-blend-mode: overlay, normal;
-        border-radius: 8px;
+        margin-top: $standard-margin * 1.5;
+        div {
+          div {
+            div {
+              background: linear-gradient(270deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), #FF4800 !important;
+              background-blend-mode: overlay, normal;
+              border-radius: 8px;
+              span {
+                display: none !important;
+              }
+            }
+          }
+        }
       }
       .airdrop-actions {
-        margin-top: 16px;
+        margin-top: $standard-margin * 2;
         display: flex;
         align-items: center;
         .more-details {
@@ -107,7 +132,7 @@
           font-weight: 700;
           display: flex;
           align-items: center;
-          padding: 8px 16px;
+          padding: $standard-padding $standard-padding * 2;
           width: 125px;
           height: 40px;
           background: #000000;
@@ -120,20 +145,22 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          padding: 8px 16px;
+          padding: $standard-padding $standard-padding * 2;
           width: 80px;
           height: 40px;
           border: 1px solid #000000;
           border-radius: 8px;
-          margin: 0 8px;
+          margin: 0 $standard-margin;
           cursor: pointer;
           font-size: 16px;
+          background: #ffffff;
         }
         .checkbox-email {
           width: 14px;
           height: 14px;
           border-radius: 2px;
-          margin: 0 8px;
+          margin: 0 $standard-margin;
+          cursor: pointer;
           &:after {
             background-color: black;
           }

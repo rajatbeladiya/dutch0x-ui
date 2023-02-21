@@ -24,7 +24,7 @@ export const MenuItems = [
         key: 'find-holders',
         path: '/find-holders',
         icon: FindHoldersIcon,
-        backgroundColor: 'linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), #c6c02e'
+        backgroundColor: 'linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), #f6ef41'
       },
       {
         name: 'Airdrop',

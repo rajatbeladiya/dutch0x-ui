@@ -7,11 +7,14 @@
     padding: 20px;
     display: flex;
     align-items: center;
+    .app-logo {
+      cursor: pointer;
+    }
     .menu-items {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 0 32px;
+      padding: 0 $standard-padding * 4;
       :first-child {
         padding-left: 0 !important;
       }
@@ -19,7 +22,7 @@
         padding-right: 0 !important;
       }
       .menu-item-wrapper {
-        padding: 0 16px 0;
+        padding: 0 $standard-padding * 2 0;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -54,7 +57,7 @@
       justify-content: center;
       align-items: center;
       width: -webkit-fill-available;
-      padding: 0 6px 0 16px;
+      padding: 0 $standard-padding 0 $standard-padding * 2;
       .serach-bar-content {
         display: flex;
         justify-content: start;
@@ -85,10 +88,10 @@
       align-items: center;
       // width: 380px;
       .status-wrapper {
-        padding: 0 32px;
+        padding: 0 $standard-padding * 4;
         .status-content {
           display: flex;
-          padding: 0px 8px;
+          padding: 0px $standard-padding;
           align-items: center;
           justify-content: center;
           width: 70px;
@@ -102,7 +105,7 @@
             border-radius: 7px;
           }
           .status {
-            padding-left: 4px;
+            padding-left: $standard-padding / 2;
             font-size: 12px;
             font-weight: 700;
             color: #3CAA2A;
@@ -124,7 +127,7 @@
         .other-items {
           height: 20px;
           width: 20px;
-          padding: 0 16px;
+          padding: 0 $standard-padding * 2;
           cursor: pointer;
           img {
             height: 100%;
@@ -136,7 +139,8 @@
   }
   .sub-menu-items {
     display: flex;
-    padding: 10px 26px 26px;
+    padding: 10px $standard-padding * 2 $standard-padding * 3;
+    flex-wrap: wrap;
     .sub-menu-items-content {
       display: flex;
       justify-content: center;
@@ -144,9 +148,10 @@
       flex-direction: column;
       flex: 1;
       cursor: pointer;
+      min-width: 150px;
       .menu-image {
         height: 150px;
-        margin: 0 8px;
+        margin: 0 $standard-margin * 3;
         width: calc(100% - 16px);
         display: flex;
         justify-content: center;
@@ -154,7 +159,7 @@
         border-radius: 8px;
       }
       .menu-name {
-        margin-top: 16px;
+        margin-top: $standard-margin * 2;
         font-weight: 700;
         line-height: 24px;
       }

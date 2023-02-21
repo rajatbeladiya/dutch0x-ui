@@ -3,8 +3,8 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
-  padding: 12px 20px 12px 24px;
-  margin-top: 24px;
+  padding: $standard-padding * 1.5 20px $standard-padding * 1.5 $standard-padding * 3;
+  margin-top: $standard-margin * 3;
   .list-card-title {
     font-weight: 500;
     font-size: 20px;
@@ -17,7 +17,7 @@
       }
       display: flex;
       justify-content: space-between;
-      margin-top: 24px;
+      margin-top: $standard-margin * 3;
       line-height: 150%;
       .item-name {
         color: rgba(0, 0, 0, 0.6);
@@ -27,7 +27,7 @@
         display: flex; 
         align-items: center;
         img {
-          padding-left: 16px;
+          padding-left: $standard-padding * 2;
         }
       }
     }

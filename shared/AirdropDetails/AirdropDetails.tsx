@@ -1,7 +1,9 @@
 import Image from "next/image";
 import DateIcon from '../../assets/icons/date.svg';
 import ClockIcon from '../../assets/icons/clock.svg';
+import PieIcon from '../../assets/icons/pie.svg';
 import { IAirdropDetails } from "@/utils/types";
+import ProgressBar from "@ramonak/react-progress-bar";
 
 const AirdropDetails = ({
   airdropLabelBackgroundColor,
@@ -15,13 +17,20 @@ const AirdropDetails = ({
   isRecieveEmail,
   airdropImage,
   progressStatusIcon,
+  progressPercentage,
 }: IAirdropDetails) => (
   <div className="airdrop-details-container">
     <Image src={airdropImage} alt='' className="bg-blur-image" />
     <div className="airdrop-details-content">
       <div className="airdrop-header">
         <div className="airdrop-label" style={{ backgroundColor: airdropLabelBackgroundColor }}>
-          {progressStatusIcon && <Image src={progressStatusIcon} alt="icon" />}
+          {progressStatusIcon ?
+            <Image src={progressStatusIcon} alt="icon" />
+            : (
+              <div className="green-circle">
+                <Image src={PieIcon} alt="icon" />
+              </div>
+          )}
           &nbsp;AIRDROP
         </div>
         <div className="airdrop-status">
@@ -47,8 +56,9 @@ const AirdropDetails = ({
           <div className="airdrop-transaction-status"><b>{processingCount}</b> Processing</div>
           <div className="airdrop-transaction-status"><b>{failedCount}</b> Failed</div>
         </div>
+        {/* <div className="transaction-progress-bar"> */}
         <div className="transaction-progress-bar">
-
+          <ProgressBar completed={progressPercentage} />
         </div>
         <div className="airdrop-actions">
           <button className="more-details">More Details</button>

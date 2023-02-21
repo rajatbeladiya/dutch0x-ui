@@ -19,6 +19,7 @@ const AirdropDetailsContainer = () => (
           isRecieveEmail={airdropDetail.isRecieveEmail}
           airdropImage={airdropDetail.airdropImage}
           progressStatusIcon={airdropDetail.progressStatusIcon}
+          progressPercentage={airdropDetail.progressPercentage}
         />
       ))
     }

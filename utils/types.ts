@@ -16,13 +16,14 @@ export interface IAirdropDetails {
   isRecieveEmail: boolean;
   airdropImage: string;
   progressStatusIcon: string;
+  progressPercentage: number;
 }
 
 export interface IListCard {
   listCardItems: Array<{
     key: string,
     name: string,
-    value?: number
+    value?: number | string
   }>;
   title?: string;
 }

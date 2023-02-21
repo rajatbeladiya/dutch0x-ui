@@ -1,4 +1,4 @@
-import Layout from "@/shared/layout/Layout";
+import Layout from "@/shared/layout/LayoutContainer";
 import Events from "./Events/EventsContainer";
 import Overview from "./OverView/OverViewContainer";
 

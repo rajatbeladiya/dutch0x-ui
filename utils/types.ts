@@ -1,3 +1,9 @@
+import { ReactElement } from "react";
+
+export interface ILayout {
+  children: ReactElement;
+}
+
 export interface IAirdropDetails {
   airdropLabelBackgroundColor: string;
   airdropStatus: string;

@@ -1,19 +1,13 @@
-import { ReactElement } from 'react';
+import { ILayout } from '@/utils/types';
 import HeaderContainer from '../header/HeaderContainer';
 
-export interface IProps {
-  children: ReactElement
-}
-
-const Layout: React.FC<IProps> = ({ children }) => {
-
+const Layout = ({ children }: ILayout) => {
   return (
     <div className='layout-container'>
       <HeaderContainer />
       <div className='main-content'>{children}</div>
     </div>
   )
-
 }
 
 export default Layout;
